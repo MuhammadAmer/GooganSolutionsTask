@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,27 +19,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4f9-3n-ua8">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BsN-aE-Sl6">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="79k-VN-kw1"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Kau-qS-eaH"/>
-                                    <constraint firstAttribute="width" constant="300" id="bwx-gU-tDc"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="wus-S8-dkX"/>
+                                    <constraint firstAttribute="width" constant="290" id="Pg0-vG-StD"/>
+                                    <constraint firstAttribute="height" constant="30" id="tVk-zt-IrR"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kta-wc-jmc">
+                                <frame key="frameInset" minX="45" minY="220" width="290" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRE-Oh-B1J">
+                                <frame key="frameInset" minX="119" minY="287" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.038455310880829041" green="0.038860103626943032" blue="0.038860103626943032" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="4f9-3n-ua8" secondAttribute="trailing" constant="20" id="3bL-mM-vfz"/>
-                            <constraint firstItem="4f9-3n-ua8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="Em3-he-zU0"/>
-                            <constraint firstItem="4f9-3n-ua8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="63" id="JzX-jw-UxL"/>
-                            <constraint firstAttribute="trailing" secondItem="4f9-3n-ua8" secondAttribute="trailing" constant="5" id="UEK-Bg-hkU"/>
-                            <constraint firstAttribute="trailing" secondItem="4f9-3n-ua8" secondAttribute="trailing" constant="2" id="n2t-pj-DU3"/>
-                            <constraint firstItem="4f9-3n-ua8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="yFj-5b-ld4"/>
-                            <constraint firstItem="4f9-3n-ua8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="2" id="zbf-1L-gpK"/>
+                            <constraint firstItem="BsN-aE-Sl6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="76L-w2-U17"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BsN-aE-Sl6" secondAttribute="trailing" constant="25" id="KPh-jM-IYJ"/>
+                            <constraint firstItem="BsN-aE-Sl6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="151" id="kdz-cp-o6W"/>
                         </constraints>
                     </view>
                 </viewController>
